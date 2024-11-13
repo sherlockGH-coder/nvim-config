@@ -39,6 +39,13 @@ local plugins = {
 
   "lewis6991/gitsigns.nvim", -- 左侧git提升
 
+  {
+    'nvim-telescope/telescope.nvim', tag = '0.1.8', -- 文件检索
+    dependencies = { {'nvim-lua/plenary.nvim'} } -- requires要改为dependencies
+  },
+
+  "numToStr/Comment.nvim", -- gcc和gc注释
+
 }
 
 local opts = {} -- 注意要定义这个变量

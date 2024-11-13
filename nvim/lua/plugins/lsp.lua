@@ -14,6 +14,7 @@ require("mason-lspconfig").setup({
     "lua_ls",
     "clangd",
     "pyright",
+    "gopls",
   },
 })
 
@@ -34,5 +35,9 @@ require("lspconfig").clangd.setup {
 
 require("lspconfig").jdtls.setup {
   cmd = { jdtls_path },
+  capabilities = capabilities,
+}
+
+require("lspconfig").gopls.setup {
   capabilities = capabilities,
 }
